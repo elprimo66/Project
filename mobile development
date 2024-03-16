@@ -1,0 +1,273 @@
+import 'package:flutter/material.dart';
+
+void main() {
+
+  runApp(const MyApp());
+
+}
+
+class MyApp extends StatelessWidget {
+
+  const MyApp({super.key});
+
+  @override
+
+  Widget build(BuildContext context) {
+
+    return const MaterialApp(
+
+      home: HomePage(),
+
+    );
+
+  }
+
+}
+
+class HomePage extends StatelessWidget {
+
+  const HomePage({super.key});
+
+  @override
+
+  Widget build(BuildContext context) {
+
+    return Scaffold(
+
+      appBar:AppBar(
+
+        title: const Text('Column',
+
+        style: TextStyle(
+
+          fontSize: 35
+
+        ),
+
+        ) ,
+
+        centerTitle: true,
+
+        backgroundColor: const Color.fromARGB(70, 20, 20, 20),
+
+        ),
+
+      body: Align(
+
+        alignment: Alignment.center,
+
+          child: Column (
+
+            children: <Widget>[
+
+              const SizedBox(
+
+                height: 90,
+
+              ),
+
+            Container(
+
+            width: 220,
+
+            height: 90,
+
+              decoration: const BoxDecoration(
+
+                color: Color.fromARGB(130, 20, 20, 20),
+
+                borderRadius: BorderRadius.all(Radius.circular(14)),
+
+              ),
+
+            child: const Align(
+
+              alignment: Alignment.center,
+
+            child: Text('Строка 1',
+
+            style: TextStyle(
+
+              fontSize: 29,
+
+              color: Colors.white
+
+            ),
+
+            ),
+
+            ),
+
+            ),
+
+          const SizedBox(width: 15,
+
+          height: 15,
+
+          ),
+
+          Container(
+
+            width: 220,
+
+            height: 90,
+
+            decoration: const BoxDecoration(
+
+              color: Color.fromARGB(160, 20, 20, 20),
+
+              borderRadius: BorderRadius.all(Radius.circular(14)),
+
+            ),
+
+            child: const Align(
+
+              alignment: Alignment.center,
+
+              child: Text('Строка 2',
+
+                style: TextStyle(
+
+                    fontSize: 29,
+
+                    color: Colors.white
+
+                ),
+
+              ),
+
+            ),
+
+          ),
+
+              const SizedBox(width: 15,
+
+                height: 15,
+
+              ),
+
+          Container(
+
+            width: 220,
+
+            height: 90,
+
+            decoration: const BoxDecoration(
+
+              color: Color.fromARGB(190, 20, 20, 20),
+
+              borderRadius: BorderRadius.all(Radius.circular(14)),
+
+            ),
+
+            child: const Align(
+
+              alignment: Alignment.center,
+
+              child: Text('Строка 3',
+
+                style: TextStyle(
+
+                    fontSize: 29,
+
+                    color: Colors.white
+
+                ),
+
+              ),
+
+            ),
+
+          ),
+
+              const SizedBox(width: 15,
+
+                height: 15,
+
+              ),
+
+          Container(
+
+            width: 220,
+
+            height: 90,
+
+            decoration: const BoxDecoration(
+
+              color: Color.fromARGB(220, 20, 20, 20),
+
+              borderRadius: BorderRadius.all(Radius.circular(14)),
+
+            ),
+
+            child: const Align(
+
+              alignment: Alignment.center,
+
+              child: Text('Строка 4',
+
+                style: TextStyle(
+
+                    fontSize: 29,
+
+                    color: Colors.white
+
+                ),
+
+              ),
+
+            ),
+
+          ),
+
+              const SizedBox(width: 15,
+
+                height: 15,
+
+              ),
+
+          Container(
+
+            width: 220,
+
+            height: 90,
+
+            decoration: const BoxDecoration(
+
+              color: Color.fromARGB(250, 20, 20, 20),
+
+              borderRadius: BorderRadius.all(Radius.circular(14)),
+
+            ),
+
+            child: const Align(
+
+              alignment: Alignment.center,
+
+              child: Text('Строка 5',
+
+                style: TextStyle(
+
+                    fontSize: 29,
+
+                    color: Colors.white
+
+                ),
+
+              ),
+
+            ),
+
+          ),
+
+            ],
+
+          ),
+
+      ),
+
+    );
+
+  }
+
+}
